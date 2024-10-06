@@ -22,4 +22,44 @@ Before you begin, ensure you have the following installed on your system:
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/ArturoVegal/GroupA_Databases.git
+   cd GroupA_Databases
+   ```
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt  # Include Pandas, SQLite libraries
+   ```
+
+3. **Set up the database:**
+   ```bash
+   python src/database/create_database.py
+   ```
+
+## Usage
+
+To start the university database management system, run:
+
+```bash
+python src/queries/main_assignment.py
+```
+
+You will be presented with a menu that allows you to:
+1. View all students.
+2. Find students enrolled in a specific course taught by a particular lecturer.
+3. List students with an average grade above 70% in their final year.
+4. Identify students not registered for any courses.
+5. Retrieve contact information for a faculty advisor.
+6. Search lecturers with expertise in a specific research area.
+
+## Testing
+
+You can run tests to verify CRUD operations and access control:
+
+```bash
+python src/queries/CRUD_Test_1.py
+python src/queries/AccessControl_Test_1.py
+```
+
+## License
+
+This project is licensed under the MIT License.

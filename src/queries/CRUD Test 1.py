@@ -8,9 +8,10 @@ from sqlalchemy import create_engine, Column, Integer, String, Date, ForeignKey
 from sqlalchemy.orm import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import IntegrityError
+import os
 
 # Database connection setup
-DATABASE_URL = 'mysql+mysqlconnector://root:admin@localhost/ABCU'
+DATABASE_URL = os.environ.get('DATABASE_URL', 'mysql+mysqlconnector://user:password@localhost/ABCU')
 engine = create_engine(DATABASE_URL)
 Base = declarative_base()
 Session = sessionmaker(bind=engine)

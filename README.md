@@ -1,6 +1,8 @@
 # University Database Management System
 
-This project is a simple university database management system implemented in Python. It allows users to query a database of students, lecturers, and courses to retrieve specific information.
+A Python system for querying a university database of students, lecturers, and courses
+through a command-line interface. Built as a group project for CSCK542 (Databases &
+Information Systems), MSc Data Science & AI, University of Liverpool.
 
 ## Features
 
@@ -13,37 +15,33 @@ This project is a simple university database management system implemented in Py
 
 ## Prerequisites
 
-Before you begin, ensure you have the following installed on your system:
-
 - Python 3.x
 - pip (Python package installer)
 
 ## Installation
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/ArturoVegal/GroupA_Databases.git
-   cd GroupA_Databases
-   ```
+```bash
+   git clone https://github.com/ArturoVegal/university-database.git
+   cd university-database
+```
 2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt  # Include Pandas, SQLite libraries
-   ```
-
+```bash
+   pip install -r requirements.txt
+```
 3. **Set up the database:**
-   ```bash
+```bash
    python src/database/create_database.py
-   ```
+```
 
 ## Usage
 
-To start the university database management system, run:
-
+To start the system, run:
 ```bash
 python src/queries/main_assignment.py
 ```
-
 You will be presented with a menu that allows you to:
+
 1. View all students.
 2. Find students enrolled in a specific course taught by a particular lecturer.
 3. List students with an average grade above 70% in their final year.
@@ -53,13 +51,19 @@ You will be presented with a menu that allows you to:
 
 ## Testing
 
-You can run tests to verify CRUD operations and access control:
-
 ```bash
 python src/queries/CRUD_Test_1.py
 python src/queries/AccessControl_Test_1.py
 ```
 
+## Team & my contribution
+
+A group project (CSCK542, MSc Data Science & AI, University of Liverpool).
+
+- **Jose Arturo Vega López — Software Engineer:** built the Python query layer (CLI
+  querying the database) and managed the repository.
+- Teammates covered schema design, testing, and project coordination.
+
 ## License
 
-This project is licensed under the MIT License.
+MIT
